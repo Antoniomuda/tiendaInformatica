@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>INFORMATICA VIRGEN DE LA PAZ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark bg-dark px-3">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" height="80" alt="Logo">
+            </a>               <div>
+                <a class="btn btn-outline-light me-2" href="clientes.html">Clientes</a>
+                <a class="btn btn-outline-light me-2" href="catalogo-ajax.html">Catálogo AJAX</a>
+                <a class="btn btn-outline-light me-2" href="clientes-jquery.html">Clientes jQuery</a>
+                <a class="btn btn-outline-light" href="catalogo-jquery.html">Catálogo jQuery</a>
+                <a class="btn btn-outline-light" href="productos.php">TAREA DWES</a>
+
+            </div>
+        </nav>
+
+        <main class="container mt-4">
+
+            <h1>Informática Virgen de la Paz Clientes </h1>
+            <form method="post" action="" id="formularioBusqueda">
+                <div class="mb-3">
+                    <label for="nacionalidad" class="form-label">Nacionalidad:</label>
+                    <select id="nacionalidad" class="form-select">
+                        <option value="es">España</option>
+                        <option value="fr">Francia</option>
+                        <option value="gb">Reino Unido</option>
+                        <option value="us">Estados Unidos</option>
+                        <option value="de">Alemania</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="cantidadResultados" class="form-label">Cantidad de resultados:</label>
+                    <input class="form-control" type="number" id="cantidadResultados" placeholder="Resultados a mostrar">
+                </div>
+
+                <div class="mb-3">
+                    <label for="genero" class="form-label">Género: </label>
+                    <select name="genero" id="genero" class="form-select">
+                        <option value="">Elige género</option>
+                        <option value="male">Masculino</option>
+                        <option value="female">Femenino</option>
+
+                    </select>
+                </div>
+                <input class="btn btn-success me-2" type="button" name="buscarPorId" id="buscarPorId" value="Buscar">
+                <input class="btn btn-secondary" type="reset" name="limpiar" id="limpiar" value="Limpiar">
+
+
+            </form>
+            <div id="resultado" class="mt-4">
+
+            </div>
+        </main>
+
+
+        <footer class="bg-dark text-white mt-5 py-5">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <img src="img/logo_footer.png" height="80" alt="Logo" class="mb-3">
+                    </div>
+                    <div class="col-md-4">
+                        <a href="politicas/politica_privacidad.pdf" class="text-white text-decoration-none me-3">Política de privacidad</a>
+                        <a href="politicas/aviso_legal.pdf" class="text-white text-decoration-none me-3">Aviso Legal</a>
+                        <a href="politicas/politica_cookies.pdf" class="text-white text-decoration-none">Política de cookies</a>
+                    </div>
+                </div>
+                <hr class="border-secondary">
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <p><img src="img/icono_telefono.png" width="20" class="me-2">916 61 90 04</p>
+                        <p><img src="img/icono_arroba.png" width="20" class="me-2">virgencita@quemequedecomoestoy.com</p>
+                        <p><img src="img/icono_mapa.png" width="20" class="me-2">Calle de Francisco Chico Mendes, 4, 28108 Alcobendas, Madrid</p>
+                    </div>
+                    <div class="col-md-8 text-muted small">
+                        <p>© 2026 Informática Virgen de la Paz. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/clientes-xhr.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,4 @@
+nbproject/
+.env
+.DS_Store
+vendor/
