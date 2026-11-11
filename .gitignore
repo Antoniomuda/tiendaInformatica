@@ -1,4 +1,4 @@
-nbproject/
+nbproject/private/
 .env
 .DS_Store
-vendor/views/cache/
+vendor/
